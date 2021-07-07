@@ -12,7 +12,7 @@ public class Arrays{
 		int exp=3;
 		sqrArray(a);
 		powArray(a, exp);
-		histogram();
+		//histogram();
 		int maxIndex=indexOfMax(b);
 		int c[]={1,2,3,4,5,6,7,8,9,1,10,11,12,13,14,15,16,17,18,19,20};
 	}
@@ -97,7 +97,7 @@ public class Arrays{
 	/* ---------------------------------------------------Sieve of Eratosthenes----------------------------------------------------------- */
 	
 		//takes an integer parameter, n, and returns a boolean array that indicates, for each number from 0 to n - 1, whether the number is prime.
-	public static void sieve (int[] c);{
+	public static void sieve (int[] c){
 		boolean isPrime;
 		for (int i=0; i<c.length; i++){
 			if ((c[i]%2==0 || (c[i]%3==0 || c[i]%5==0 || c[i]%7==0)	&& c[i]>7)){
