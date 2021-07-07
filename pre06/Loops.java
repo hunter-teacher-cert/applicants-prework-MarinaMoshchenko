@@ -35,11 +35,10 @@ public class Loops{
 		int estimate=1;
 		int fact;
 		
-		for (int i=1; i<=n; i++);{
-			iTerm=power(x,i)/factorial(i);
+		for (int i=1; i<=n; i++){
+			iTerm=(int)power(x,i)/factorial(i);	//casting double to int, otherwise - "incompatible types, lossy conversion"
 			estimate = estimate + iTerm;
 			System.out.println(estimate);
-			return estimate;
 		}
 	
 	}
